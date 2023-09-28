@@ -1,0 +1,796 @@
+/*********** Header ***********/
+
+.header {
+    width: 100%;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+    z-index: 9000;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.header .container {
+    padding: 1rem 0;
+}
+
+.header .nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: none;
+}
+.open-main-nav {
+    display: none;
+}
+
+.nav-bar .logo img {
+    width: 150px;
+}
+
+.nav-bar .nav .nav-link {
+    color: var(--cor-branco);
+    padding: 4px 16px;
+
+    position: relative;
+    margin-left: 8px;
+}
+
+.nav-bar .nav .nav-link::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-vermelho);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar .nav .nav-link:hover {
+    color: var(--cor-vermelho);
+}
+
+.nav-bar .nav .nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-bar .nav .nav-link.destaque {
+    border: 2px solid var(--cor-vermelho);
+    border-radius: 4px;
+}
+
+.nav-bar .nav .nav-link.destaque:hover {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+}
+
+.header.fixed {
+    position: fixed;
+    background-color: var(--cor-branco);
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.header.fixed .logo-image {
+    width: 100px;
+}
+
+.header.fixed .nav-link {
+    color: var(--cor-vermelho);
+}
+
+/******** Banner **********/
+
+.banner {
+    background-image: url(../img/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a1;
+    z-index: 1;
+}
+
+.banner .box-banner {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    background-color: #efefef;
+
+    bottom: 0;
+    right: 0;
+
+    z-index: 2;
+
+    border-top: 10px solid var(--cor-vermelho);
+}
+
+.banner .box-banner .text {
+    padding: 2rem 4rem;
+}
+
+.banner .box-banner .text h2 {
+    padding: 1rem 0;
+    font-size: 2.4rem;
+}
+
+.banner .box-banner .text p {
+    padding: 1rem 0;
+    line-height: 1.4;
+}
+
+.banner .box-banner .text a {
+    font-weight: 600;
+}
+
+.banner .container {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner .orcamento-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 50%;
+}
+
+.banner .orcamento-text h1 {
+    color: var(--cor-branco);
+}
+
+.banner .orcamento-text p {
+    padding: 1rem 0;
+    color: var(--cor-branco);
+}
+
+.banner .orcamento-text .button-orcamento {
+    margin-top: 1rem;
+}
+
+/********* Sobre ******/
+
+.sobre {
+    width: 100%;
+    padding: 10rem 0;
+}
+
+.sobre .content-sobre {
+    width: 50%;
+    margin-right: 5rem;
+}
+
+.sobre .content-sobre h6 {
+    color: var(--cor-vermelho);
+}
+
+.sobre .content-sobre h3 {
+    padding-bottom: 1rem;
+}
+
+.sobre .content-sobre p {
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.sobre .content-sobre .icon-text {
+    margin-top: 2rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .content-sobre .icon-text .icon {
+    width: 280px;
+    text-align: center;
+}
+
+.sobre .image-sobre {
+    width: 50%;
+}
+
+.sobre .image-sobre img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.sobre .vantagens {
+    margin-top: 5rem;
+}
+
+.sobre .vantagens .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre .vantagens .box-vantagens {
+    flex: 0 0 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    align-self: stretch;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.sobre .vantagens .box-vantagens .icon {
+    margin-right: 2rem;
+}
+
+.sobre .vantagens .box-vantagens .text p {
+    text-align: left;
+}
+.sobre .vantagens .box-vantagens .text h6 {
+    padding-bottom: 1rem;
+    color: var(--cor-vermelho);
+}
+
+.sobre-diretoria {
+    width: 100%;
+    background-color: var(--cor-vermelho);
+    position: relative;
+}
+
+.sobre-diretoria .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-diretoria .image {
+    width: 45%;
+}
+
+.sobre-diretoria .image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sobre-diretoria .text {
+    width: 50%;
+}
+
+.sobre-diretoria .text h3 {
+    color: var(--cor-branco);
+    padding-bottom: 1rem;
+}
+
+.sobre-diretoria .text p {
+    color: var(--cor-branco);
+    text-align: justify;
+}
+
+/******** Serviços *********/
+
+.servicos {
+    width: 100%;
+    padding: 10rem 0;
+
+    background-image: url(../img/world-map.png);
+}
+
+.servicos .title h3 {
+    color: var(--cor-vermelho);
+}
+
+.servicos .title hr {
+    height: 3px;
+    margin-top: 1rem;
+    width: 200px;
+    background-color: var(--cor-vermelho);
+}
+
+.servicos .lista-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.lista-servicos .box-servico {
+    flex: 0 0 30%;
+    text-align: center;
+    border-radius: 4px;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    align-self: stretch;
+}
+
+.lista-servicos .box-servico .icon img {
+    width: 120px;
+}
+.lista-servicos .box-servico .text {
+    padding: 2rem 1rem;
+}
+.lista-servicos .box-servico .text h4 {
+    font-size: 2rem;
+    color: var(--cor-vermelho);
+}
+
+.lista-servicos .box-servico .text p {
+    padding-top: 1rem;
+}
+
+/*********** Contato **********/
+
+.contato {
+    padding: 10rem 0 5rem 0;
+    background-color: var(--cor-vermelho);
+}
+
+.contato .title-contato {
+    text-align: left;
+}
+
+.contato .title-contato h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--cor-branco);
+}
+.contato .title-contato hr {
+    height: 3px;
+    margin-top: 1rem;
+    width: 200px;
+    background-color: var(--cor-branco);
+}
+
+.contato .title-contato p {
+    padding-top: 2rem;
+    color: var(--cor-vermelho);
+}
+
+.contato .content {
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato .content .mapa {
+    width: 50%;
+    margin-right: 2rem;
+    align-self: stretch;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.contato .content .mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* .contato .content .mapa::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    transform: translateX(-70%);
+    z-index: -1;
+    background-color: var(--cor-preto);
+} */
+
+.contato .content .form {
+    width: 50%;
+}
+
+.contato .content .form .infos-form > div {
+    padding: 1rem 1rem 1rem 0;
+    width: 50%;
+}
+
+.contato .content .form .infos-form > div i {
+    color: var(--cor-vermelho);
+    font-size: 3rem;
+    background-color: var(--cor-branco);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.contato .content .form .infos-form > div p {
+    padding-top: 1rem;
+    color: var(--cor-branco);
+}
+
+.contato .content .form form input[type="text"],
+.contato .content .form form input[type="tel"],
+.contato .content .form form input[type="email"] {
+    border: 1px solid var(--cor-branco);
+    padding: 0.8rem 0.6rem;
+    background-color: transparent;
+    outline: none;
+
+    width: 100%;
+    margin: 1rem 0;
+
+    color: var(--cor-branco);
+
+    border-radius: 4px;
+}
+
+.contato .content .form form .input-nome-email {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato .content .form form .input-nome-email input {
+    width: 48%;
+    background-color: transparent;
+}
+
+.contato .content .form form textarea {
+    border: 1px solid var(--cor-branco);
+    padding: 0.8rem 0.6rem;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+
+    width: 100%;
+    height: 20rem;
+
+    color: var(--cor-branco);
+
+    border-radius: 4px;
+}
+
+.contato .content .form form input::placeholder {
+    color: var(--cor-branco);
+}
+
+.contato .content .form form textarea::placeholder {
+    color: var(--cor-branco);
+}
+
+.contato .content .form form .button {
+    margin-top: 1rem;
+}
+
+.contato .content .form form .button input[type="submit"] {
+    background-color: var(--cor-branco);
+    padding: 8px 30px;
+    color: var(--cor-vermelho);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+.contato .content .form form .button input[type="submit"]:hover {
+    background-color: var(--cor-cinza);
+    color: var(--cor-branco);
+    transition: all 0.3s ease-in-out;
+}
+
+/*********** Footer **********/
+
+.footer {
+    background-color: var(--cor-branco);
+    padding: 60px 0px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .container .logo img {
+    width: 300px;
+}
+
+.footer .container > div {
+    margin: 0 5px;
+}
+
+.footer .container .links-rapidos ul {
+    margin-top: 2rem;
+}
+
+.footer .container .links-rapidos ul li {
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.footer .container .links-rapidos ul li a {
+    color: var(--cor-preto);
+    border-bottom: 1px solid var(--cor-preto);
+    padding: 1rem 0;
+    width: 200px;
+}
+
+.footer .container .links-rapidos ul li a:hover {
+    color: var(--cor-vermelho);
+    border-color: var(--cor-vermelho);
+
+    transform: translateX(5px);
+}
+
+.footer .container .infos ul {
+    margin-top: 2rem;
+}
+
+.footer .container .infos ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: var(--cor-preto);
+    padding: 0.5rem 0;
+}
+
+.footer .container .infos ul li a i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.footer .container .infos ul li a:hover {
+    color: var(--cor-vermelho);
+    transform: translateX(5px);
+}
+
+.footer .container .redes ul {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .container .redes ul li {
+    margin-right: 1rem;
+}
+
+.footer .container .redes ul li a {
+    color: var(--cor-preto);
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-size: 2.6rem;
+
+    width: 50px;
+
+    text-align: center;
+}
+
+.footer .container .redes .orcamento-footer {
+    margin-top: 2rem;
+}
+
+.footer .container .redes .orcamento-footer a {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 1px solid var(--cor-vermelho);
+}
+
+.footer .container .redes .orcamento-footer a:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-vermelho);
+}
+
+/****** Back to top Button *****/
+
+.backtotop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: var(--cor-vermelho);
+
+    border-radius: 5px;
+
+    display: grid;
+    place-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--cor-branco);
+    box-shadow: 0 0 20 rgba(255, 255, 255, 0.2);
+}
+
+.backtotop button {
+    font-size: 2rem;
+    color: var(--cor-branco);
+
+    padding: 1.4rem;
+    border-radius: 5px;
+    background-color: var(--cor-vermelho);
+
+    cursor: pointer;
+}
+
+.backtotop.show {
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/******** Orçamento Modal *********/
+
+.modal-control.active {
+    overflow: hidden;
+}
+
+.orcamento-modal {
+    position: fixed;
+    width: 100vw;
+    height: 0;
+    background-color: #00000055;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.orcamento-modal .box-modal {
+    background-color: var(--cor-branco);
+    border-radius: 4px;
+    padding: 4rem;
+
+    height: auto;
+
+    position: relative;
+
+    visibility: hidden;
+    opacity: 0;
+
+    overflow-y: scroll;
+
+    width: 80vw;
+    height: 80vh;
+}
+
+.orcamento-modal .box-modal h4 {
+    padding-bottom: 2rem;
+}
+
+.orcamento-modal .box-modal form h6 {
+    color: var(--cor-vermelho);
+    padding: 1rem 0;
+}
+
+.orcamento-modal .box-modal form .input-control {
+    width: 100%;
+}
+
+.orcamento-modal .box-modal form .input-control label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.orcamento-modal .box-modal form .input-control input {
+    outline: none;
+    padding: 4px 8px;
+    border: 1px solid var(--cor-vermelho);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.orcamento-modal .box-modal form .input-control select {
+    outline: none;
+    padding: 4px 8px;
+    border: 1px solid var(--cor-vermelho);
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-family: "Open Sans";
+}
+
+.orcamento-modal .box-modal form .input-control option {
+    font-size: 1.6rem;
+    font-family: "Open Sans";
+}
+.orcamento-modal .box-modal form .input-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orcamento-modal .box-modal form .input-flex .input-control {
+    width: 49%;
+}
+
+.orcamento-modal .box-modal form .input-flex .input-control input {
+    width: 100%;
+}
+
+.orcamento-modal .box-modal form .input-send {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.orcamento-modal .box-modal form .input-send input {
+    padding: 1rem 5rem;
+    border-radius: 4px;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.orcamento-modal .box-modal form .input-send input:hover {
+    background-color: #00772e;
+}
+
+.orcamento-modal .close-modal {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-modal .close-modal button {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    font-size: 2.4rem;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.orcamento-modal .close-modal button:hover {
+    background-color: var(--cor-preto);
+}
+
+.orcamento-modal.active {
+    height: 100vh;
+    background-color: #00000055;
+    visibility: visible;
+    opacity: 1;
+}
+.orcamento-modal.active .box-modal {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,157 @@
+@media screen and (max-width: 1438px) {
+    .sobre-diretoria .row{
+        flex-direction: column;
+    }
+
+    .sobre-diretoria .row .text{
+        width: 90%;
+        padding: 5rem 0;
+    }
+    
+    .sobre-diretoria .row .image{
+        width: 100%;
+    }
+
+    .sobre-diretoria .row .text .container{
+        width: 100%;
+        margin: 0;
+        max-width: none;
+    }
+
+    .sobre .container .row{
+        flex-direction: column;
+    }
+
+    .sobre .content-sobre{
+        width: 100%;
+    }
+
+    .sobre .image-sobre{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .sobre .vantagens .box-vantagens{
+        margin: 1rem 0;
+    }
+
+    .footer .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .container > div{
+        width: 100%;
+    }
+
+    .footer .container .links-rapidos ul li a{
+        width: 100%;
+    }
+
+    .footer .container .infos {
+        margin: 2rem 0;
+    }
+    .footer .container .logo {
+        text-align: center;
+    }
+
+    .contato .content{
+        flex-direction: column-reverse;
+    }
+
+    .contato .content .mapa{
+        width: 100%;
+        height: 30rem;
+    }
+
+    .contato .content .form{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 1022px) {
+    .banner .box-banner{
+        width: 100%;
+        bottom: 0;
+        display: block;
+        transform: translateY(50%);
+    }
+
+    .banner .orcamento-text{
+        width: 100%;
+    }
+
+    .sobre{
+        margin-top: 5rem;
+    }
+
+
+
+    .nav{
+        display: none;
+    }
+
+    .open-main-nav{
+        display: block;
+    }
+
+    .lista-servicos .box-servico{
+        flex: 0 0 49%;
+    }
+
+    .banner .orcamento-text .button-orcamento a{
+        width: fit-content;
+    }
+
+}
+
+
+
+@media screen and (max-width: 766px) {
+    .lista-servicos .box-servico{
+        flex: 0 0 100%;
+    }
+
+    .banner .orcamento-text h1{
+        font-size: 2.4rem;
+    }
+
+    .sobre{
+        margin-top: 15rem;
+    }
+
+    .sobre .content-sobre .icon-text{
+        flex-direction: column;
+    }
+
+    .footer .container .infos ul li a{
+        word-wrap: break-word;
+    }
+
+    .footer .container .infos ul li a{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer .container .infos ul li{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
