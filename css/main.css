@@ -110,20 +110,6 @@
     z-index: 1;
 }
 
-.banner .box-banner {
-    position: absolute;
-    width: 60%;
-    height: auto;
-    background-color: #efefef;
-
-    bottom: 0;
-    right: 0;
-
-    z-index: 2;
-
-    border-top: 10px solid var(--cor-vermelho);
-}
-
 .banner .box-banner .text {
     padding: 2rem 4rem;
 }
@@ -175,6 +161,7 @@
 .sobre {
     width: 100%;
     padding: 10rem 0;
+    border-top: 10px solid var(--cor-vermelho); 
 }
 
 .sobre .content-sobre {
