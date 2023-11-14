@@ -160,7 +160,7 @@
 
 .sobre {
     width: 100%;
-    padding: 10rem 0;
+    padding: 5rem 0;
     border-top: 10px solid var(--cor-vermelho); 
 }
 
@@ -272,8 +272,6 @@
 
 .servicos {
     width: 100%;
-    padding: 10rem 0;
-
     background-image: url(../img/world-map.png);
 }
 
@@ -309,8 +307,11 @@
     align-self: stretch;
 }
 
+
 .lista-servicos .box-servico .icon img {
-    width: 120px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
 }
 .lista-servicos .box-servico .text {
     padding: 2rem 1rem;
@@ -339,11 +340,38 @@
     height: 100%;
 }
 
+.servicos .slider-carros .swiper-wrapper {
+    padding-bottom: 6rem;
+}
+
+.servicos .slider-carros .swiper-button-prev,
+.servicos .slider-carros .swiper-button-next {
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.servicos .slider-carros .swiper-button-prev::after,
+.servicos .slider-carros .swiper-button-next::after {
+    font-size: 2rem;
+}
+
+.servicos .slider-carros .swiper-button-prev,
+.servicos .slider-carros .swiper-button-next {
+    bottom: 0;
+    top: auto;
+}
+
+.servicos .slider-carros .swiper-button-prev {
+    right: 6rem;
+    left: auto;
+}
+
 /*********** Depoiementos **********/
 .depoimentos {
+    padding: 5rem 0;
     width: 100%;
-    padding: 5rem 0 10rem 0;
-
     background-image: url(../img/world-map.png);
 }
 
@@ -440,8 +468,8 @@
 /*********** Contato **********/
 
 .contato {
-    padding: 10rem 0 5rem 0;
-    background-color: var(--cor-vermelho);
+    padding: 2rem 0;
+    background-color: #a87c33;
 }
 
 .contato .title-contato {
@@ -617,7 +645,7 @@
 }
 
 .footer .container .logo img {
-    width: 300px;
+    width: 250px;
 }
 
 .footer .container > div {
@@ -733,6 +761,9 @@
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--cor-branco);
     box-shadow: 0 0 20 rgba(255, 255, 255, 0.2);
+
+    z-index: 9999;
+
 }
 
 .backtotop button {
@@ -747,6 +778,47 @@
 }
 
 .backtotop.show {
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/****** Whatsapp Button *****/
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    background-color: #25D366;
+
+    border-radius: 5px;
+
+    display: grid;
+    place-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--cor-branco);
+    box-shadow: 0 0 20 rgba(255, 255, 255, 0.2);
+
+    z-index: 9999;
+}
+
+.whatsapp-button button {
+    font-size: 2rem;
+    color: var(--cor-branco);
+
+    padding: 1.6rem;
+    border-radius: 5px;
+    background-color: #25D366;
+
+    cursor: pointer;
+}
+
+.whatsapp-button.show {
     visibility: visible;
     opacity: 1;
 

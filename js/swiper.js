@@ -35,6 +35,10 @@ var swiperCarros = new Swiper(".mySwiperCarros", {
         delay: 4000,
         disableOnInteraction: false,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
