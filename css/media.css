@@ -1,51 +1,51 @@
 @media screen and (max-width: 1438px) {
-    .sobre-diretoria .row{
+    .sobre-diretoria .row {
         flex-direction: column;
     }
 
-    .sobre-diretoria .row .text{
+    .sobre-diretoria .row .text {
         width: 90%;
         padding: 5rem 0;
     }
-    
-    .sobre-diretoria .row .image{
+
+    .sobre-diretoria .row .image {
         width: 100%;
     }
 
-    .sobre-diretoria .row .text .container{
+    .sobre-diretoria .row .text .container {
         width: 100%;
         margin: 0;
         max-width: none;
     }
 
-    .sobre .container .row{
+    .sobre .container .row {
         flex-direction: column;
     }
 
-    .sobre .content-sobre{
+    .sobre .content-sobre {
         width: 100%;
     }
 
-    .sobre .image-sobre{
+    .sobre .image-sobre {
         width: 100%;
         margin-top: 2rem;
     }
 
-    .sobre .vantagens .box-vantagens{
+    .sobre .vantagens .box-vantagens {
         margin: 1rem 0;
     }
 
-    .footer .container{
+    .footer .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .footer .container > div{
+    .footer .container > div {
         width: 100%;
     }
 
-    .footer .container .links-rapidos ul li a{
+    .footer .container .links-rapidos ul li a {
         width: 100%;
     }
 
@@ -56,102 +56,89 @@
         text-align: center;
     }
 
-    .contato .content{
+    .contato .content {
         flex-direction: column-reverse;
     }
 
-    .contato .content .mapa{
+    .contato .content .mapa {
         width: 100%;
         height: 30rem;
     }
 
-    .contato .content .form{
+    .contato .content .form {
         width: 100%;
         margin-bottom: 2rem;
     }
-    
 }
 
 @media screen and (max-width: 1022px) {
-    .banner .box-banner{
+    .banner .box-banner {
         width: 100%;
         bottom: 0;
         display: block;
         transform: translateY(50%);
     }
 
-    .banner .orcamento-text{
+    .banner .orcamento-text {
         width: 100%;
     }
 
-    .sobre{
+    .sobre {
         margin-top: 5rem;
     }
 
-
-
-    .nav{
+    .nav {
         display: none;
     }
 
-    .open-main-nav{
+    .open-main-nav {
         display: block;
     }
 
-    .lista-servicos .box-servico{
+    .lista-servicos .box-servico {
         flex: 0 0 49%;
     }
 
-    .banner .orcamento-text .button-orcamento a{
+    .banner .orcamento-text .button-orcamento a {
         width: fit-content;
     }
-
 }
 
-
-
 @media screen and (max-width: 766px) {
-    .lista-servicos .box-servico{
+    .lista-servicos .box-servico {
         flex: 0 0 100%;
     }
 
-    .banner .orcamento-text h1{
+    .banner .orcamento-text h1 {
         font-size: 2.4rem;
     }
 
-    .sobre{
+    .sobre {
         margin-top: 15rem;
     }
 
-    .sobre .content-sobre .icon-text{
+    .sobre .content-sobre .icon-text {
         flex-direction: column;
     }
 
-    .footer .container .infos ul li a{
+    .footer .container .infos ul li a {
         word-wrap: break-word;
     }
 
-    .footer .container .infos ul li a{
+    .footer .container .infos ul li a {
         flex-direction: column;
         align-items: start;
     }
 
-    .footer .container .infos ul li{
+    .footer .container .infos ul li {
         text-align: center;
     }
+    .contato .content .form .infos-form {
+        flex-wrap: wrap;
+    }
+
+    .contato .content .form .infos-form > div {
+        width: 100%;
+        flex: auto;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

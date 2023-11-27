@@ -110,20 +110,6 @@
     z-index: 1;
 }
 
-.banner .box-banner {
-    position: absolute;
-    width: 60%;
-    height: auto;
-    background-color: #efefef;
-
-    bottom: 0;
-    right: 0;
-
-    z-index: 2;
-
-    border-top: 10px solid var(--cor-vermelho);
-}
-
 .banner .box-banner .text {
     padding: 2rem 4rem;
 }
@@ -174,7 +160,8 @@
 
 .sobre {
     width: 100%;
-    padding: 10rem 0;
+    padding: 5rem 0;
+    border-top: 10px solid var(--cor-vermelho); 
 }
 
 .sobre .content-sobre {
@@ -285,8 +272,6 @@
 
 .servicos {
     width: 100%;
-    padding: 10rem 0;
-
     background-image: url(../img/world-map.png);
 }
 
@@ -303,14 +288,16 @@
 
 .servicos .lista-servicos {
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
     align-items: center;
     margin-top: 5rem;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .lista-servicos .box-servico {
-    flex: 0 0 30%;
+    width: 30%;
     text-align: center;
     border-radius: 4px;
     margin: 1rem 0;
@@ -320,8 +307,11 @@
     align-self: stretch;
 }
 
+
 .lista-servicos .box-servico .icon img {
-    width: 120px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
 }
 .lista-servicos .box-servico .text {
     padding: 2rem 1rem;
@@ -335,11 +325,151 @@
     padding-top: 1rem;
 }
 
+.servicos .slider-carros {
+    margin-top: 2rem;
+}
+
+.servicos .slider-carros .box-carro{
+    width: 100%;
+    height: 30rem;
+}
+.servicos .slider-carros .box-carro img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.servicos .slider-carros .swiper-wrapper {
+    padding-bottom: 6rem;
+}
+
+.servicos .slider-carros .swiper-button-prev,
+.servicos .slider-carros .swiper-button-next {
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.servicos .slider-carros .swiper-button-prev::after,
+.servicos .slider-carros .swiper-button-next::after {
+    font-size: 2rem;
+}
+
+.servicos .slider-carros .swiper-button-prev,
+.servicos .slider-carros .swiper-button-next {
+    bottom: 0;
+    top: auto;
+}
+
+.servicos .slider-carros .swiper-button-prev {
+    right: 6rem;
+    left: auto;
+}
+
+/*********** Depoiementos **********/
+.depoimentos {
+    padding: 5rem 0;
+    width: 100%;
+    background-image: url(../img/world-map.png);
+}
+
+.depoimentos .title h3 {
+    color: var(--cor-vermelho);
+}
+
+.depoimentos .title hr {
+    height: 3px;
+    margin-top: 1rem;
+    width: 200px;
+    background-color: var(--cor-vermelho);
+}
+
+.depoimentos .depoimentos-list {
+    margin-top: 5rem;
+}
+
+.depoimentos .depoimentos-list .swiper-wrapper {
+    padding-bottom: 6rem;
+}
+
+.depoimentos .depoimentos-list .swiper-slide {
+    padding: 1rem;
+    height: 25rem;
+}
+
+.depoimentos .depoimentos-list .box-depo {
+    box-shadow: 0 0 5px #00000055;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.depoimentos .depoimentos-list .box-depo .text {
+    padding: 1rem;
+}
+
+.depoimentos .depoimentos-list .box-depo .avaliacao {
+    padding: 1rem;
+}
+
+.depoimentos .depoimentos-list .box-depo .avaliacao strong {
+    color: var(--cor-vermelho);
+}
+
+.depoimentos .depoimentos-list .box-depo .avaliacao .estrelas {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.depoimentos .depoimentos-list .box-depo .avaliacao .five-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--cor-vermelho);
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.depoimentos .depoimentos-list .box-depo hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--cor-vermelho);
+    border: none;
+    margin: 1rem 0;
+}
+
+.depoimentos .depoimentos-list .swiper-button-prev,
+.depoimentos .depoimentos-list .swiper-button-next {
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.depoimentos .depoimentos-list .swiper-button-prev::after,
+.depoimentos .depoimentos-list .swiper-button-next::after {
+    font-size: 2rem;
+}
+
+.depoimentos .depoimentos-list .swiper-button-prev,
+.depoimentos .depoimentos-list .swiper-button-next {
+    bottom: 0;
+    top: auto;
+}
+
+.depoimentos .depoimentos-list .swiper-button-prev {
+    right: 6rem;
+    left: auto;
+}
+
 /*********** Contato **********/
 
 .contato {
-    padding: 10rem 0 5rem 0;
-    background-color: var(--cor-vermelho);
+    padding: 2rem 0;
+    background-color: #a87c33;
 }
 
 .contato .title-contato {
@@ -365,14 +495,13 @@
 
 .contato .content {
     margin-top: 3rem;
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column-reverse;
 }
 
 .contato .content .mapa {
-    width: 50%;
+    width: 100%;
+    height: 40rem;
     margin-right: 2rem;
     align-self: stretch;
 
@@ -399,12 +528,12 @@
 } */
 
 .contato .content .form {
-    width: 50%;
+    width: 100%;
 }
 
 .contato .content .form .infos-form > div {
     padding: 1rem 1rem 1rem 0;
-    width: 50%;
+    flex: 1;
 }
 
 .contato .content .form .infos-form > div i {
@@ -418,6 +547,19 @@
 .contato .content .form .infos-form > div p {
     padding-top: 1rem;
     color: var(--cor-branco);
+}
+
+.contato .content .form .infos-form .whats a {
+    color: var(--cor-branco);
+    padding: 1rem;
+    border: 1px solid var(--cor-branco);
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+
+.contato .content .form .infos-form .whats a:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-vermelho);
 }
 
 .contato .content .form form input[type="text"],
@@ -503,7 +645,7 @@
 }
 
 .footer .container .logo img {
-    width: 300px;
+    width: 250px;
 }
 
 .footer .container > div {
@@ -619,6 +761,9 @@
     transition: all 0.3s ease-in-out;
     border: 1px solid var(--cor-branco);
     box-shadow: 0 0 20 rgba(255, 255, 255, 0.2);
+
+    z-index: 9999;
+
 }
 
 .backtotop button {
@@ -633,6 +778,47 @@
 }
 
 .backtotop.show {
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+/****** Whatsapp Button *****/
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    background-color: #25D366;
+
+    border-radius: 5px;
+
+    display: grid;
+    place-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--cor-branco);
+    box-shadow: 0 0 20 rgba(255, 255, 255, 0.2);
+
+    z-index: 9999;
+}
+
+.whatsapp-button button {
+    font-size: 2rem;
+    color: var(--cor-branco);
+
+    padding: 1.6rem;
+    border-radius: 5px;
+    background-color: #25D366;
+
+    cursor: pointer;
+}
+
+.whatsapp-button.show {
     visibility: visible;
     opacity: 1;
 
