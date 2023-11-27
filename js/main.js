@@ -5,12 +5,12 @@ $(window).scroll(function () {
         $('.header').addClass('fixed');
         $('.backtotop').addClass('show');
         $('.whatsapp-button').addClass('show');
-        $('.logo-image').attr('src', 'img/logo.png');
+        $('.logo-image').attr('src', 'img/logo3.png');
     } else {
         $('.header').removeClass('fixed');
         $('.whatsapp-button').removeClass('show');
         $('.backtotop').removeClass('show');
-        $('.logo-image').attr('src', 'img/logo-branco-2.png');
+        $('.logo-image').attr('src', 'img/logo3-branca.png');
     }
 });
 
